@@ -1,6 +1,8 @@
 import './App.css';
 import NavBar from './components/Navbar';
-import CarritoDeCompras from './components/CarritoDeCompras';
+import ProductContainer from './components/ProductContainer';
+
+
 
 function App() {
   return ( 
@@ -9,9 +11,11 @@ function App() {
       <NavBar />      
     </header>    
 
-    <section>
-      <CarritoDeCompras greetings="Carrito"/>
-    </section>
+   
+
+    <div>
+      <ProductContainer />
+    </div>
   </>  
   );
 
