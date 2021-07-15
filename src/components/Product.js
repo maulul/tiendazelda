@@ -1,9 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 
-
 export default function Product(props) {
-
+    console.log(props)
     const [qty,setQty] = useState(1);
 
     return (

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import Product from './Product'
-import ZeldasLogo from '../imagenes/225589.png'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 
@@ -10,11 +9,19 @@ export default function ProductContainer() {
     const arrayDeProductos = [
         {
             name:'Logo de Zelda',
-            imagen:{ZeldasLogo},
+            imagen:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_Legend_of_Zelda.svg/526px-The_Legend_of_Zelda.svg.png',
             desc:'es el logo principal',
             precio:'500'
             
-        }        
+        },        
+
+        {
+            name:'espada',
+            imagen:'https://studio.cults3d.com/_8__EoH_s7cGKjbZ9gO7sz1jfG8=/https://files.cults3d.com/uploaders/14052590/illustration-file/ebd27f55-4a72-43ed-8d15-88d1a1a7e6d2/33791.png',
+            desc:'master sword',
+            precio:'450'
+        }
+        
     ]
 
     const [cart,setCart] = useState([]);
