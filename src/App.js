@@ -7,15 +7,16 @@ import ItemListContainer from './components/ItemListContainer';
 function App() {
   return ( 
     <>      
-    <header className="container">
-      <NavBar />      
-    </header>    
+      <header>
+        <NavBar />      
+      </header>  
+      <div className="fakeHeader"></div>  
 
    
 
-    <div>
-      <ItemListContainer />
-    </div>
+      <div>
+        <ItemListContainer />
+      </div>
   </>  
   );
 

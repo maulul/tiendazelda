@@ -18,7 +18,7 @@ export default function ProductContainer() {
 
         setTimeout(() => {
             getProducts()
-        }, 5000);
+        }, 2000);
     },[])
     
     console.log(products)
@@ -48,10 +48,12 @@ export default function ProductContainer() {
      },[cart])
 
     return (
-        <div>           
+        <div className="container"> 
+            <div className="row">      
 
              {products.map(elemento =>{
                 return(
+                    
                 <Product 
                 name={elemento.name}
                 imagen={elemento.imagen}
@@ -80,5 +82,6 @@ export default function ProductContainer() {
                 
             </div>
         </div>
+        </div>   
     )
 }

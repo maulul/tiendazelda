@@ -1,8 +1,8 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import CartWidget from "./CartWidget"
-import imagenCarrito from "../imagenes/225589.png"
+import LogoZelda from "./LogoZelda"
+import Logo from "../imagenes/225589.png"
 
 export default function NavBar(){
     return(  
@@ -11,7 +11,7 @@ export default function NavBar(){
             <div className="navBar">
                 <ul>
                     <li>
-                        <CartWidget greetings={imagenCarrito}/>
+                        <LogoZelda logo={Logo}/>
                     </li>
 
                     <li>
@@ -28,7 +28,7 @@ export default function NavBar(){
                 </ul>
             </div>
         </header>     
-        <div className="fakeHeader"></div>
+        
         </>
        
     )
