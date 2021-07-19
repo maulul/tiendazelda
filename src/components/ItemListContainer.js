@@ -1,8 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
-import Product from './Product'
-import { useEffect } from 'react'
-import { useRef } from 'react'
+import React from 'react';
+import { useState } from 'react';
+import Product from './Product';
+import { useEffect } from 'react';
+import { useRef } from 'react';
+import Cart from './Cart'
 
 export default function ProductContainer() {
 
@@ -21,7 +22,6 @@ export default function ProductContainer() {
         }, 2000);
     },[])
     
-    console.log(products)
     const [cart,setCart] = useState([]);
     const primerRender = useRef(true);
 
@@ -29,7 +29,7 @@ export default function ProductContainer() {
          form.preventDefault();
         
          let item = {
-            producto: producto.name,
+             producto: producto.name,
              imagen:producto.imagen,
              precio:producto.precio,
              quantity:form.target[1].value
@@ -51,35 +51,26 @@ export default function ProductContainer() {
         <div className="container"> 
             <div className="row">      
 
-             {products.map(elemento =>{
+             {products.map((elemento,index) =>{
                 return(
                     
                 <Product 
+                key={index}
                 name={elemento.name}
                 imagen={elemento.imagen}
                 desc={elemento.desc}
-                precio={elemento.precio}                                
+                precio={elemento.precio}  
+                stock={elemento.stock}                              
                 addToCart={getProduct}
                 />
                 )
             })}  
 
             <div className="subtotal">
-                 {cart.map(element =>{
-                    return (
-                        <>
-                        <h3>Producto</h3>
-                        {element.producto}
-                        <h3>cantidad</h3>
-                        {element.quantity}
-                        <h3>precio por producto</h3>
-                        {element.precio}
-                        <h3>Total de producto</h3>
-                        {element.precio * element.quantity}
-                        </>
-                    )
-                })} 
-                
+                 {
+                     <Cart cart={cart}/>
+                 }
+               
             </div>
         </div>
         </div>   

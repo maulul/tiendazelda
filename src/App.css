@@ -4,18 +4,17 @@ body{
 
 .fakeHeader {
   margin: 50px;
-  height: 50px;
+  height: 100px;
   width: 100%;
 }
 
 header{
+  display: flex;
   border: solid 1px black;
-  background-color: antiquewhite;
-  position: fixed;
-  top: 0%;
+  background-color: antiquewhite; 
   width: 100%;
-  height: 50px;
-  
+  align-items: center;
+  justify-content: space-around;
 }
 
 
@@ -25,8 +24,8 @@ header{
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
+  
 }
 
 .navBar ul li {
@@ -50,4 +49,41 @@ header{
 .carrito:hover {
   color: red;
 }
+
+.product {  
+  border: solid 2px black;
+  padding: 25px;
+  background-color: antiquewhite;
+  margin: 15px;
+}
+
+.imgProduct {
+  width: 250px;
+  height: 200px;
+  border: solid 2px black;
+  padding: 5px;
+  background-color: rgb(214, 214, 214);
+}
+
+.cardTitle, .cardDesc {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.bodyCard {
+  text-align: center;
+  background-color: gray;
+}
+
+.cardContainer {
+  position: fixed;
+  padding: 150px;
+  background-color: azure;
+  top: 1rem;
+  right: 1rem;
+  border: solid 2px black;
+}
+
+
+
 
