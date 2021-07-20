@@ -84,6 +84,20 @@ header{
   border: solid 2px black;
 }
 
+.productDetail {
+  visibility: hidden;
+  
+}
+
+.productDetailvisible {
+
+  background-color: azure;
+  top: 1rem;
+  right: 1rem;
+  border: solid 2px black;
+
+}
+
 
 
 

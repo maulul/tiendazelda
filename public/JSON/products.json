@@ -1,5 +1,6 @@
  [
-    {        
+    {     
+        "id":0,   
         "name":"Logo de Zelda",
         "imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_Legend_of_Zelda.svg/526px-The_Legend_of_Zelda.svg.png",
         "desc":"es el logo principal",
@@ -9,6 +10,7 @@
     },        
 
     {
+        "id":1,
         "name":"Master sword",
         "imagen":"https://studio.cults3d.com/_8__EoH_s7cGKjbZ9gO7sz1jfG8=/https://files.cults3d.com/uploaders/14052590/illustration-file/ebd27f55-4a72-43ed-8d15-88d1a1a7e6d2/33791.png",
         "desc":"master sword",
@@ -17,6 +19,7 @@
     },
 
     {
+        "id":2,
         "name":"escudo",
         "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
         "desc":"escudo zelda",
@@ -25,6 +28,7 @@
     },
 
     {
+        "id":3,
         "name":"escudo",
         "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
         "desc":"escudo zelda",
@@ -33,6 +37,7 @@
     },
 
     {
+        "id":4,
         "name":"escudo",
         "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
         "desc":"escudo zelda",
@@ -41,6 +46,7 @@
     },
     
     {
+        "id":5,
         "name":"escudo",
         "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
         "desc":"escudo zelda",

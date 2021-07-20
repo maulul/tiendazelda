@@ -29,7 +29,8 @@ export default function ProductContainer() {
          form.preventDefault();
         
          let item = {
-             producto: producto.name,
+             id:producto.id,
+             producto:producto.name,
              imagen:producto.imagen,
              precio:producto.precio,
              quantity:form.target[1].value
@@ -49,30 +50,32 @@ export default function ProductContainer() {
 
     return (
         <div className="container"> 
-            <div className="row">      
+            <div className="row">  
 
-             {products.map((elemento,index) =>{
-                return(
-                    
-                <Product 
-                key={index}
-                name={elemento.name}
-                imagen={elemento.imagen}
-                desc={elemento.desc}
-                precio={elemento.precio}  
-                stock={elemento.stock}                              
-                addToCart={getProduct}
-                />
-                )
-            })}  
+                {products.map((elemento,index) =>{
+                    return(
+                        
+                        <Product 
+                        key={index}
+                        id={elemento.id}
+                        name={elemento.name}
+                        imagen={elemento.imagen}
+                        desc={elemento.desc}
+                        precio={elemento.precio}  
+                        stock={elemento.stock}
+                        initial={1}                              
+                        addToCart={getProduct}
+                        />
+                    )
+                })}  
 
-            <div className="subtotal">
-                 {
-                     <Cart cart={cart}/>
-                 }
-               
+                <div className="subtotal">
+                    {
+                        <Cart cart={cart}/>
+                    }
+                
+                </div>
             </div>
-        </div>
         </div>   
     )
 }
