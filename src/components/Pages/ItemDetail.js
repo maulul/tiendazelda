@@ -26,10 +26,21 @@ export default function ItemDetail() {
         <div className="container"> 
             <div className="row">  
 
-                {itemDetails.map((elemento,index) =>{
+                {itemDetails.map((elemento) =>{
                     return(
-                        <div>
+                        <div className="detailBody">
+                            <div>
                             {elemento.name}
+                            </div>
+                            <div>
+                                <img src={elemento.imagen} alt="imagen"/>                            
+                            </div>
+                            <div>
+                                {elemento.desc}
+                            </div>
+                            <div>
+                                ${elemento.precio}
+                            </div>
                         </div>                        
                     )
                 })}  
