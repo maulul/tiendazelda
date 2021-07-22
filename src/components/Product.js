@@ -10,7 +10,9 @@ export default function Product(props) {
             <div className="col-md-4">
                 <div className="product">
                 <Card  >
+                    <Link to={`/itemDetail/${props.id}`}>
                     <Card.Img className="imgProduct" variant="top" src={props.imagen} alt="Logo de Zelda" />
+                    </Link>
                     <div className="bodyCard">
                         <Card.Title className="cardTitle">{props.name}</Card.Title>     
                         <Card.Text className="cardDesc">{props.desc}</Card.Text>
@@ -21,7 +23,7 @@ export default function Product(props) {
                                 <input type="number" disabled value={qty}/>
                                 <button type="button" onClick={()=>{qty === props.stock?setQty(qty):setQty(qty+1)}}>+</button>
                                 <button type="submit">Comprar</button>
-                                <Link to='/itemDetail'>
+                                <Link to={`/itemDetail/${props.id}`}>
                                     <button>Ver mas</button>
                                 </Link>
                             </form>
