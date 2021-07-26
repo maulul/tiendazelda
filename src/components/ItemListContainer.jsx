@@ -57,12 +57,13 @@ export default function ItemListContainer() {
                     )
                 })}  
 
-                <div className="subtotal">
+                {/* <div className="subtotal">
+
                     {
                         <Cart cart={cart}/>
                     }
                 
-                </div>
+                </div> */}
             </div>
         </div>   
     )

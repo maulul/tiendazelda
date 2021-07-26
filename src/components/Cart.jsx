@@ -1,15 +1,16 @@
-import React from "react"
+import React from "react";
+import { useContext } from "../context/cartContext";
 
 export default function Cart (props) {
-    let cart1 = props.cart;
-    console.log(props)
+    let {cart} = useContext();
+    
 
     return (
         <>
-            <div className="cardContainer">
+            <div className="cartContainer">
                 { 
                 
-                cart1.map(e =>{
+                cart.map(e =>{
                     return(
                         
                                 <ItemsCart

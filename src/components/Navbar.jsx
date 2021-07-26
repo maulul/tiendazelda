@@ -19,7 +19,7 @@ export default function NavBar(){
                 <Link to='/products' className="productos">    
                     <li >productos</li>
                 </Link>
-                <Link className="carrito">                              
+                <Link to='/cart' className="carrito">                              
                     <li ><FontAwesomeIcon icon={faShoppingCart} /></li> 
                 </Link>                     
             </ul>

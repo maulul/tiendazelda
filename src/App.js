@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Nav from './components/Pages/Nav';
 import Products from './components/Pages/Products';
 import ItemDetail from './components/Pages/ItemDetail';
-import Carts from './components/Cart'
+import Cart from './components/Cart'
 import ProviderContext from './context/ProviderContext';
 
 export default () => 
@@ -20,6 +20,7 @@ function App() {
         <Route path="/" exact component ={Home}/>
         <Route path="/products" exact component={Products} />
         <Route path="/itemDetail/:id" exact component={ItemDetail} />
+        <Route path="/cart" exact component={Cart}/>
       </Switch>         
     </Router>  
   );
