@@ -3,9 +3,11 @@ import { useState } from 'react';
 import Product from './Product';
 import { useEffect } from 'react';
 import { useRef } from 'react';
+import { useContext } from '../context/cartContext';
 import Cart from './Cart'
 
-export default function ItelListContainer() {
+
+export default function ItemListContainer() {
 
 
     const [products,setProducts] = useState([]);
@@ -22,22 +24,10 @@ export default function ItelListContainer() {
         }, 2000);
     },[])
     
-    const [cart,setCart] = useState([]);
+    const {cart} = useContext();
     const primerRender = useRef(true);
+    
 
-    const getProduct = (form,producto) =>{
-         form.preventDefault();
-        
-         let item = {
-             id:producto.id,
-             producto:producto.name,
-             imagen:producto.imagen,
-             precio:producto.precio,
-             quantity:form.target[1].value
-         }
-
-         setCart([...cart,item]);
-     }
 
      useEffect(() =>{
          if(!primerRender.current){
@@ -59,12 +49,10 @@ export default function ItelListContainer() {
                         key={index}
                         id={elemento.id}
                         name={elemento.name}
-                        imagen={elemento.imagen}
-                        desc={elemento.desc}
+                        imagen={elemento.imagen}                        
                         precio={elemento.precio}  
                         stock={elemento.stock}
-                        initial={1}                              
-                        addToCart={getProduct}
+                        initial={1}                                                   
                         />
                     )
                 })}  

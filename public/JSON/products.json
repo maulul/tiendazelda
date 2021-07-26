@@ -1,9 +1,9 @@
  [
     {     
         "id":0,   
-        "name":"Logo de Zelda",
-        "imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_Legend_of_Zelda.svg/526px-The_Legend_of_Zelda.svg.png",
-        "desc":"es el logo principal",
+        "name":"Espada Maestra",
+        "imagen":"https://www.zeldadungeon.net/wiki/images/thumb/e/eb/Master_Sword_-_HWAoC_icon.png/150px-Master_Sword_-_HWAoC_icon.png",
+        "desc":"La Espada Maestra (マスターソード, Masutā Sōdo ?, Master Sword en inglés), también conocida como la espada destructora del Mal, es la espada legendaria del reino de Hyrule y arma recurrente en la saga de The Legend of Zelda. Está dotada con el poder de repeler el mal. En muchos juegos, se dice que es la única espada capaz de derrotar al malvado Ganondorf y su forma demoníaca, Ganon. Está directamente relacionada con la leyenda del Héroe del Tiempo y se ha convertido en uno de los símbolos más emblemáticos de The Legend of Zelda, apareciendo a menudo en varios juegos de la franquicia.",
         "precio":500,
         "stock":10
 
@@ -11,45 +11,45 @@
 
     {
         "id":1,
-        "name":"Master sword",
-        "imagen":"https://studio.cults3d.com/_8__EoH_s7cGKjbZ9gO7sz1jfG8=/https://files.cults3d.com/uploaders/14052590/illustration-file/ebd27f55-4a72-43ed-8d15-88d1a1a7e6d2/33791.png",
-        "desc":"master sword",
+        "name":"Espada de Biggoron",
+        "imagen":"https://www.zeldadungeon.net/wiki/images/f/f2/Biggoron-sword-botw.png",
+        "desc":"La espada de Biggoron (Biggoron's Sword en inglés) es un arma recurrente en la saga de The Legend of Zelda. Se compone de una larga hoja forjada por Biggoron, una espada con el sello del pueblo goron.",
         "precio":450,
         "stock":12
     },
 
     {
         "id":2,
-        "name":"escudo",
-        "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
-        "desc":"escudo zelda",
+        "name":"Gancho",
+        "imagen":"https://www.zeldadungeon.net/wiki/images/thumb/d/d3/OoT_Hookshot.png/124px-OoT_Hookshot.png",
+        "desc":"El gancho es uno de los objetos mas importantes e influyentes de la saga The Legend of Zelda. Es un objeto compuesto por un mango, que permite a Link ir a lugares que previamente eran inaccesibles. También se pueden atraer objetos a Link. Sirve también como arma, pero produce muy poco daño.",
         "precio":350,
         "stock":15
     },
 
     {
         "id":3,
-        "name":"escudo",
-        "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
-        "desc":"escudo zelda",
+        "name":"Escudo Hyliano",
+        "imagen":"https://www.zeldadungeon.net/wiki/images/thumb/5/5a/Hylian_Shield_OoT.png/124px-Hylian_Shield_OoT.png",
+        "desc":"El Escudo Hyliano (ハイリア の 盾, Hairia no Tate ?, Hylian Shield en inglés) es uno de los escudos utilizados en la saga The Legend of Zelda. Se trata del escudo más simbólico de la saga, ya que Link suele ser representado con él. Es un escudo de metal, de un tamaño para una persona adulta. Se dice que este tipo de escudo fue utilizado por los caballeros de Hyrule. Aunque su diseño varía un poco entre los juegos, todos los Escudos Hylianos poseen el emblema de la Trifuerza, al igual que el ave roja.",
         "precio":350,
         "stock":18
     },
 
     {
         "id":4,
-        "name":"escudo",
-        "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
-        "desc":"escudo zelda",
+        "name":"Escudo espejo",
+        "imagen":"https://www.zeldadungeon.net/wiki/images/thumb/9/93/Mirror_Shield.png/124px-Mirror_Shield.png",
+        "desc":"El escudo espejo (鏡の盾, Kagami no Tate ?, Mirror Shield en inglés) es un escudo recurrente de la saga de The Legend of Zelda. Este escudo especial tiene una superficie reflectante que permite a Link reflejar la luz del sol y ciertos ataques mágicos. Ha habido múltiples escudos espejo a lo largo de la saga, a menudo con diseños variables.",
         "precio":350,
         "stock":20
     },
     
     {
         "id":5,
-        "name":"escudo",
-        "imagen":"https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/33/latest/20190702183736/Escudo_Hyliano_Twilight_Princess_HD.png/180px-Escudo_Hyliano_Twilight_Princess_HD.png",
-        "desc":"escudo zelda",
+        "name":"Escudo Deku",
+        "imagen":"https://www.zeldadungeon.net/wiki/images/thumb/5/57/Deku_Shield_OoT.png/124px-Deku_Shield_OoT.png",
+        "desc":"Tiene una apariencia simple y hasta incluso muy rústica. Su forma es un poco irregular, siendo pequeño, casi simulando una hoja, y está hecho de madera, lo que lo hace inflamable. Porta como emblema el símbolo de la tribu Kokiri, el cual está marcado en un rojo muy intenso, dicho símbolo corresponde a la forma que tiene la Esmeralda Kokiri. El uso es algo simple: al presionar el botón correspondiente, Link se cubrirá pero se quedará quieto. Se puede cambiar su orientación automáticamente si se usa mientras se fija un objetivo. También puede hacer rebotar algunos proyectiles enemigos.",
         "precio":350,
         "stock":21
     }

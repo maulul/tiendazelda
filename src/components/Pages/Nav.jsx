@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../../components/Navbar';
+import NavBar from '../Navbar';
 import Logo from "../../imagenes/225589.png"
 import LogoZelda from "../LogoZelda"
 import { Link } from 'react-router-dom'
@@ -13,7 +13,6 @@ export default function Nav() {
                 </Link>
                 <NavBar />      
             </header>  
-            <div className="fakeHeader"></div>
         </div>
     )
 }

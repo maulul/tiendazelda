@@ -2,12 +2,6 @@ body{
   background-color: beige;
 }
 
-.fakeHeader {
-  margin: 50px;
-  height: 100px;
-  width: 100%;
-}
-
 header{
   display: flex;
   border: solid 1px black;
@@ -50,6 +44,13 @@ header{
   color: red;
 }
 
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .product {  
   border: solid 2px black;
   padding: 25px;
@@ -84,20 +85,40 @@ header{
   border: solid 2px black;
 }
 
-.productDetail {
-  visibility: hidden;
-  
+
+.product input {
+    width: 100px
 }
 
-.productDetailvisible {
 
-  background-color: azure;
-  top: 1rem;
-  right: 1rem;
+.containerDetail {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+.detailBody {
+  grid-column: 1/2;
+  background-color: antiquewhite;
   border: solid 2px black;
-
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
+.detailCounter {
+  grid-column: 2/3;
+  background-color: antiquewhite;
+  border: solid 2px black;
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

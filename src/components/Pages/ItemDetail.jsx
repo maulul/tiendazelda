@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import ItemCount from '../ItemCount';
 
 
 export default function ItemDetail() {
@@ -22,12 +23,24 @@ export default function ItemDetail() {
         }, 2000);
     }, [])
 
-    return (
-        <div className="container"> 
-            <div className="row">  
+    let item;
 
+    itemDetails.forEach(elemento=>{
+        item={             
+            id:elemento.id,
+            name:elemento.name,
+            imagen:elemento.imagen,
+            desc:elemento.desc,
+            precio:elemento.precio, 
+            stock:elemento.stock 
+         }
+    })
+    
+    return (
+        <div className="containerDetail">        
                 {itemDetails.map((elemento) =>{
                     return(
+                        <>
                         <div className="detailBody">
                             <div>
                             {elemento.name}
@@ -37,16 +50,18 @@ export default function ItemDetail() {
                             </div>
                             <div>
                                 {elemento.desc}
-                            </div>
-                            <div>
-                                ${elemento.precio}
-                            </div>
-                        </div>                        
+                            </div>                          
+                                                                                  
+                        </div>   
+                        <div className="detailCounter">
+                        ${elemento.precio}  
+                        <ItemCount
+                            item={item}
+                        />
+                    </div>  
+                    </>                   
                     )
-                })}  
-
-               
-            </div>
+                })}                
         </div>   
     )
 }

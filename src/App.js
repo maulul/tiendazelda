@@ -1,10 +1,16 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import Nav from './components/Pages/Nav';
 import Products from './components/Pages/Products';
-import ItemDetail from './components/Pages/ItemDetail'
+import ItemDetail from './components/Pages/ItemDetail';
+import Carts from './components/Cart'
+import ProviderContext from './context/ProviderContext';
 
-
+export default () => 
+  <ProviderContext>
+    <App></App>
+  </ProviderContext>
 
 function App() {
   return ( 
@@ -23,10 +29,13 @@ function App() {
 
 const Home = () => {
   return(
-  <div>
-    <h1>Home page</h1>
-  </div>
+    <div className="mainTitle">
+      <h1>Home page</h1>
+      <h2>Bienvenidos a la tienda de Zelda</h2>
+      <Link to='/products'>
+        <button>Click para ver nuestros productos</button>
+      </Link>
+    </div>
   )
 }
 
-export default App;
